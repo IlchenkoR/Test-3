@@ -3,7 +3,7 @@
  */
 
 import express, { Request, Response } from "express";
-const api = require("./api");
+import api from './api'
 import logger from './logger';
 import config from './config';
 
