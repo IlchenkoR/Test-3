@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "eslint ./"
+    "test": "eslint ./",
+    "build": "tsc"
   },
   "author": "Reon",
   "license": "ISC",
   "dependencies": {
+    "@types/express": "^4.17.21",
     "axios": "^0.27.2",
     "axios-retry": "^3.2.5",
     "express": "^4.18.1",
@@ -17,6 +19,9 @@
     "querystring": "^0.2.0"
   },
   "devDependencies": {
-    "eslint": "^8.14.0"
+    "@types/node": "^22.5.1",
+    "eslint": "^8.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   }
 }

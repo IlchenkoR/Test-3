@@ -1,0 +1,26 @@
+/**
+ * Модуль содержит ключи интеграции и другие конфигурации
+ */
+
+interface Config {
+	CLIENT_ID: string;
+	CLIENT_SECRET: string;
+	AUTH_CODE: string;
+	REDIRECT_URI: string;
+	SUB_DOMAIN: string;
+	PORT: number;
+  }
+
+const config: Config = {
+	// данные для api amocrm
+	CLIENT_ID: "1016683b-8a5f-49c3-89fa-394e83aa4fc4",
+	CLIENT_SECRET: "wZqu0qIEIIZ3OWatuI3klaZzxzBdhZKZlhpwYzJWHz5f33nhhxHYrvjLxrS8o7Bx",
+	//AUTH_CODE живет 20 минут, при перезапуске скрипта нужно брать новый
+	AUTH_CODE: "def502002cb801b2a945404a067d7808026c42e52cb050d1d02b1ddf88da4a3f80bb5473df9cf2d7badb806085e4ec67e57305cbd42fa934723d90d4a0c60dc0ee0add956ec938325c43feb1465583c5dd22d4578c6abb0e4da0de79e9a52ac141246b2491dd28c25560069c0afc7c734b6fc15a98aa9672435f37ff9cf3eda7de1f7a8caee99ebd4ee40be1fb2eaf0fe9e615860250d7e2d627f9754213d0503bf95c4c5d67e84f653bf25176e3a5ebc73968425b6a62396c2421c1ab7022821c37c2c07b14a861157fcabe84620974732baba21f454a8cd86d3cc293623836a0a3c595e9c58bae9ce5dbf16bd8c4499780e7b6a4ecc49b6a9fc94656710c9040add9ba94695647595ec8c564a7f3fb274e31365b8b50086fe51a753ac7ed960dde79dc25ce5fba3b3dd97b3f46bee6da1311b0d5065f2bc24f35356e95f8e13cf315f8472d2b8ef07264c878c058759fc2679eb6406b07efa06f2da828856dccf11e510ea131732162eb94b7771b9f47f90f28baf6f058bc8b3abc3c70fb1feaa6f747300e802514cc978495eaf7c7ddb27972728b7d11ff7c05b4d96f589fb84a8c81d5e69e13a15a65a64b847b5ada1d7eca02fc9f19817304485843cce3eb10dcc22b54a3303fcbe1f266fbceb1f1a27e74eba7d29e1dd99045d57e2bfe33e00314488eeb3495c5e3d0b81443a489df6e662a83eef0a6f7f39b9e5dd6989b",
+	REDIRECT_URI: "https://916b-77-95-90-50.ngrok-free.app/install",
+	SUB_DOMAIN: "rilchenko",
+	// конфигурация сервера
+	PORT: 2000,
+}; 
+
+export default config;
