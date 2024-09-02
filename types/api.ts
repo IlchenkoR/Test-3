@@ -142,6 +142,8 @@ class Api {
 		  ...filters,
 		})}`;
 
+		console.log(url)
+
 		return axios
       		.get(url, {
         		headers: {
@@ -183,6 +185,30 @@ class Api {
 			},
 		});
 	});
+
+	//Вывод задач
+	public createTask = this.authChecker((data: any) => {
+		return axios.post(`${this.ROOT_PATH}/api/v4/tasks`, [].concat(data), {
+			headers: {
+				Authorization: `Bearer ${this.access_token}`,
+			},
+		});
+	});
+
+
+	//Создание задачи
+	public getTasks = this.authChecker(() => {
+		return axios
+		  .get(
+			`${this.ROOT_PATH}/api/v4/tasks?[0].status`,
+			{
+			  headers: {
+				Authorization: `Bearer ${this.access_token}`,
+			  },
+			}
+		  )
+	});
+
 
 }
 
